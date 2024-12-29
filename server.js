@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors"; // Middleware for Cross-Origin Resource Sharing (optional)
-import bodyParser from "body-parser"; // Middleware for parsing JSON and URL-encoded data
-import { authenticateUser } from "./utils/userAuth.js";
-import { authenticateToken } from "./middleware/session.js";
+const express = require("express");
+const cors = require("cors"); // Middleware for Cross-Origin Resource Sharing (optional)
+const bodyParser = require("body-parser"); // Middleware for parsing JSON and URL-encoded data
+const { authenticateUser } = require("./utils/userAuth");
+const { authenticateToken } = require("./middleware/session");
 
 // Initialize the app
 const app = express();

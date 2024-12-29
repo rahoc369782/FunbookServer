@@ -1,6 +1,6 @@
-import { Level } from "level"; // Import the 'level' package
-import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
+const { Level } = require("level"); // Import the 'level' package
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
 // Initialize the LevelDB database with a directory path
 const db = new Level("user_db"); // The 'user_db' directory will store the database
 // Sample function to add a user (for demonstration)
